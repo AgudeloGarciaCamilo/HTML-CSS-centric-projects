@@ -1,6 +1,10 @@
 :root {
     /* 001b29, 00344f,  */
     --main-background-color: #000203;
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
 }
 
 body {
@@ -9,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--main-background-color);
-
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -68,7 +72,7 @@ fieldset {
 }
 
 .survey-form__form-controls {
-    height: 1000px;
+    height: 100%;
     width: 75%;
     min-height: 80%;
     min-width: 60%;
@@ -83,7 +87,18 @@ fieldset {
 
 }
 
+.survey-form__section-two {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.survey-form__section-three {
+    margin-top: 30px;
+    text-align: left;
+}
+
 .survey-form__label {
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     gap:10px;
@@ -95,4 +110,41 @@ fieldset {
 
 .survey-form__input {
     width: 100%;
+    padding: 10px;
+}
+
+.survey-form__radio-group {
+
+}
+
+.survey-form__checkbox-group {
+    margin-top: 30px;
+}
+
+.survey-form__option {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+.survey-form__buttons-container {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.survey-form__button {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: block;
+    border-radius: 6px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-green);
 }

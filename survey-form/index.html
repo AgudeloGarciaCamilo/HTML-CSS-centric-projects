@@ -17,11 +17,138 @@
 
                 <article class="survey-form__form-controls">
                     <fieldset class="survey-form__section-one">
-                        <label for="name" class="survey-form__label">
+                        <label id="name-label" for="name" class="survey-form__label">
                             <span class="survey-form__label-text">Name</span>
-                            <input type="text" id="name" class="survey-form__input">
+                            <input 
+                                type="text"
+                                id="name"
+                                class="survey-form__input" 
+                                required
+                                placeholder="For example: Herbert Galarga"    
+                            >
+                        </label>
+
+                        <label id="email-label" for="email" class="survey-form__label">
+                            <span class="survey-form__label-text">Email</span>
+                            <input
+                                type="email"
+                                id="email"
+                                class="survey-form__input"
+                                required
+                                placeholder="For example: elganzo@sappe.com"
+                            >
+                        </label>
+
+                        <label id="number-label" for="number" class="survey-form__label">
+                            <span class="survey-form__label-text">How many guitars do you own?</span>
+                            <input
+                                type="number"
+                                id="number"
+                                class="survey-form__input"
+                                min="0"
+                                max="1000"
+                                placeholder="Guitar Hero controllers DO NOT count"
+                            >
+                        </label>
+
+                        <label id="dropdown-label" for="dropdown" class="survey-form__label">
+                            <span class="survey-form__label-text">What kind of model is your favourite Guitar?</span>
+
+                            <select id="dropdown" class="survey-form__input">
+                                <option value="">(Select your favourite model)</option>
+                                <option value="1">Stratocaster</option>
+                                <option value="2">Superstrat</option>
+                                <option value="3">Les Paul</option>
+                                <option value="4">Telecaster</option>
+                                <option value="5">Telecaster</option>
+                                <option value="6">Explorer</option>
+                                <option value="7">Fireman</option>
+                                <option value="8">Iceman</option>
+                                <option value="9">Hollow-Body</option>
+                                <option value="10">Other</option>
+                            </select>
                         </label>
                     </fieldset>
+
+                    <fieldset class="survey-form__section-two">
+                        <div id="radio-label" for="bridge" class="survey-form__radio-group">
+                            <span class="survey-form__label-text">What kind of bridge do you prefer?</span>
+
+                            <div class="survey-form__option">
+                                <input type="radio" id="static" name="bridge" value="static" checked>
+                                <label for="static">Static</label>
+                            </div>
+                          
+                            <div class="survey-form__option">
+                                <input type="radio" id="semifloating" name="bridge" value="semifloating">
+                                <label for="semifloating">Semi floating bridge</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="radio" id="floating" name="bridge" value="floating">
+                                <label for="floating">Floating bridge</label>
+                            </div>
+                        </div>
+
+                        <div id="checkbox-label" for="genre" class="survey-form__checkbox-group">
+                            <span class="survey-form__label-text">Which genres do you like to play?</span>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="rock" name="genre" value="rock">
+                                <label for="rock">Rock</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="blues" name="genre" value="blues">
+                                <label for="blues">Blues</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="metal" name="genre" value="metal">
+                                <label for="metal">Metal</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="jazz" name="genre" value="jazz">
+                                <label for="jazz">Jazz</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="fusion" name="genre" value="fusion">
+                                <label for="fusion">Fusion</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="neoclassical" name="genre" value="neoclassical">
+                                <label for="neoclassical">Neoclassical</label>
+                            </div>
+
+                            <div class="survey-form__option">
+                                <input type="checkbox" id="anything" name="genre" value="anything">
+                                <label for="anything">Anything Musical</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="survey-form__section-three">
+                        <label for="comments" class="survey-form__label">
+                            <span class="survey-form__label-text">Tell us what you like most about guitar:</span>
+                            
+                            <textarea
+                                class="survey-form__input"
+                                name="comments"
+                                id="comments" 
+                                rows="3" 
+                                cols="30"
+                                placeholder="What I like most about guitar is..."
+                            ></textarea>
+                        </label>
+                    </fieldset>
+
+
+                    <p class="survey-form__buttons-container">
+                        <button class="survey-form__button">Submit</button>
+                    </p>
                 </article>
             </form>
         </section>
